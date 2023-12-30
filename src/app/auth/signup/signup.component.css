@@ -1,0 +1,11 @@
+.password-match-error-box{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  height: 2rem;
+}
+
+.signup-btn{
+  display: flex;
+  justify-content: center;
+}

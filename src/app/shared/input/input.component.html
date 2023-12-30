@@ -1,0 +1,24 @@
+<div class="field">
+  <label>{{ label }}</label>
+  <input [type]="inputType" [formControl]="control">
+  <div *ngIf="showError()" class="ui pointing red basic label small">
+    <p *ngIf="control.errors?.['required']">
+      Value is required
+    </p>
+    <p *ngIf="control.errors?.['minlength']">
+      Value must be atleast 3 characters
+    </p>
+    <p *ngIf="control.errors?.['maxlength']">
+      Value must not be more than 20 characters
+    </p>
+    <p *ngIf="control.errors?.['pattern']">
+      Value can only contain alphabets and numbers
+    </p>
+    <p *ngIf="control.errors?.['nonUniqueUsername']">
+      Username already taken
+    </p>
+    <p *ngIf="control.errors?.['noNetworkConnection']">
+      No internet connection
+    </p>
+  </div>
+</div>
