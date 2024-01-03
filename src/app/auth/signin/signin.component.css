@@ -2,10 +2,15 @@
   display: flex;
   justify-content: center;
   margin: 1rem 0;
-  height: 2rem;
+  /*height: 2rem;*/
 }
 
 .signin-btn {
   display: flex;
   justify-content: center;
+}
+
+.header{
+  margin: 2rem 0;
+  text-align: center;
 }

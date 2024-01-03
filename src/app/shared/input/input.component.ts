@@ -10,6 +10,7 @@ export class InputComponent {
   @Input() label = ""
   @Input() control!: FormControl | any
   @Input() inputType = "text"
+  @Input() controlType = "input"
 
   showError() {
     const {errors, dirty, touched} = this.control

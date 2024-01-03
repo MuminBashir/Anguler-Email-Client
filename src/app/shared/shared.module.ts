@@ -4,11 +4,13 @@ import {ReactiveFormsModule} from "@angular/forms";
 
 import {SharedRoutingModule} from './shared-routing.module';
 import {InputComponent} from './input/input.component';
+import {ModalComponent} from './modal/modal.component';
 
 
 @NgModule({
   declarations: [
-    InputComponent
+    InputComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,7 @@ import {InputComponent} from './input/input.component';
   ],
 
   exports: [
-    InputComponent
+    InputComponent, ModalComponent
   ]
 })
 export class SharedModule {

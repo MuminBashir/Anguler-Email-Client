@@ -1,0 +1,16 @@
+.actions:empty {
+  display: none;
+}
+
+.actions-default {
+  display: none;
+}
+
+.actions:empty + .actions-default {
+  display: block;
+}
+
+.my-modal {
+  /*height: 20%;*/
+  overflow-y: scroll;
+}
